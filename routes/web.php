@@ -19,4 +19,4 @@ Route::get('/', function () {
         'user'=>2]);
     return view('welcome');
 });
-Route::get('/soma/{num1}/{num2}', [ClientController::class,'soma']);
+Route::get('/soma/{num1}/{num2}', [LogController::class,'soma']);
