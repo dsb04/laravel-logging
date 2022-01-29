@@ -14,8 +14,8 @@ class LogController extends Controller
     }
     public function sub(Request $request)
     {
-      $num1=$request->$num1;
-      $num2=$request->$num2;
+      $num1=$request->num1;
+      $num2=$request->num2;
       $sub=$num1-$num2;
         logger()->debug('Sub feita', ['num1' => $num1, 'num2' => $num2, 'sub' => $sub]);
         return $sub;
