@@ -35,7 +35,7 @@ class LogController extends Controller
         return $div;
 
     }
-    public function mult(Request $resquet)
+    public function mult(Request $resquest)
     {
         $num1 = $request->num1;
         $num2 = $request->num2;
