@@ -17,8 +17,10 @@ class LogController extends Controller
       $num1=$request->$num1;
       $num2=$request->$num2;
       $sub=$num1-$num2;
-        logger()->debug('Sub feita', ['num1' => $num1, 'num2' => $num2, 'sub' => "{a subtração dos números}"]);
+        logger()->debug('Sub feita', ['num1' => $num1, 'num2' => $num2, 'sub' => $sub]);
         return $sub;
+    
+
     }
     public function div(Request $request)
     {
