@@ -20,5 +20,5 @@ class LogController extends Controller
         logger()->debug('Sub feita', ['num1' => $num1, 'num2' => $num2, 'sub' => "{a subtração dos números}"]);
         return $sub;
     }
-
+    
 }
