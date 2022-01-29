@@ -24,22 +24,13 @@ class LogController extends Controller
     {
         $num1 = $request->num1;
         $num2 = $request->num2;
-        if ($num2=0){
+        $div =$num1 / $num2;
+        if ($num2==0){
             logger()->error('Divisor zero!');
-            return ;
+            return false;
         }
         logger()->info('Div feita');
-        return $num1 / $num2;
-
-    }
-    public function mult(Request $request)
-    {
-        $num1 = $request->num1;
-        $num2 = $request->num2;
-        if ($num2 || $num1 ){
-            logger()->Log::warning('Negativo');
-        }
-        return $num1 * $num2;
+        return $div;
 
     }
 }

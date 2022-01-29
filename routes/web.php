@@ -22,3 +22,4 @@ Route::get('/', function () {
 });
 Route::get('/soma/{num1}/{num2}', [LogController::class,'soma']);
 Route::get('/sub/{num1}/{num2}', [LogController::class,'sub']);
+Route::get('/div/{num1}/{num2}', [LogController::class,'div']);
