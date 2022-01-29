@@ -35,4 +35,14 @@ class LogController extends Controller
         return $div;
 
     }
+    public function mult(Request $resquet)
+    {
+        $num1 = $request->num1;
+        $num2 = $request->num2;
+        if($num1<0||$num2<0){
+            logger()->warning('Negativo');
+        }
+        $div = $num1 * $num2;
+        return $div;
+    }
 }
